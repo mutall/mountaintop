@@ -20,10 +20,13 @@ if (isset($_SESSION['mail'])) {
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <link rel="icon" href="images/favicon.png" type="image/png" />
             <link rel="stylesheet" href="assets/css/main.css" />
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <link rel="stylesheet" href="assets/css/bootstrap.css" />
+            <!--            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
             <script src="assets/js/mountainTop.js"></script>
+            <script src="assets/js/jquery.js"></script>
+            <script src="assets/js/bootstrap.js"></script>
             <style>
                 .add_photos{
                     width: 50%;
@@ -86,15 +89,15 @@ if (isset($_SESSION['mail'])) {
                 <div class="add_photos">
                     <h4>ADD GALLERY PHOTOS</h4>
                     <form action="upload.php" method="post" enctype="multipart/form-data">
-
                         <input type="file" name="image" id="img">
                         <label for="subject">
                             LOCATION</label>
-                        <select id="subject" name="subject" class="form-control" required="required">
+                        <select id="subject" name="location" class="form-control" required="required">
                             <option value="na" selected="">Choose One:</option>
                             <option value="slider">HOMEPAGE(SLIDER)</option>
-                            <option value="tanzania">HOMEPAGE(PLACES)</option>
-                            <option value="uganda">GALLERY PAGE</option>
+                            <option value="places">HOMEPAGE(PLACES)</option>
+                            <option value="inner">PLACES(INNER)</option>
+                            <option value="gallery">GALLERY PAGE</option>
                         </select>
                         <input type="text" name="caption" placeholder="Enter a caption">
                         <input type="submit" value="Upload" name="submit">
@@ -130,29 +133,25 @@ if (isset($_SESSION['mail'])) {
 
                     <!-- Modal content-->
                     <div class="modal-content">
-                        <div class="modal-header">
+                        <div class="modal-body">    
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <form action="uploadTours.php">
+                            <form action="uploadTours.php" method="post" enctype="multipart/form-data">
                                 <input type="file" name="image" id="img">
-                                <input type="text" name="caption" placeholder="Enter a caption">
+                                <input type="text" name="caption" id="caption" placeholder="Enter a caption">
                                 <label for="subject">
                                     TOUR</label>
-                                <select id="subject" name="subject" class="form-control" required="required">
+                                <select id="subject" name="section" class="form-control" required="required">
                                     <option value="na" selected="">Choose One:</option>
                                     <option value="kenya">kenya tour</option>
                                     <option value="tanzania">tanzania tour</option>
                                     <option value="uganda">uganda tour</option>
                                 </select>
-                        </div>
-                        <div class="modal-body">
-                            <input type="text" id="title" placeholder="Itinerary title">
-                            <textarea class="form-control" rows="5" id="comment" name="comment" placeholder="itinerary description">
-                            </textarea>
+                                <input type="text" name="title" id="title" placeholder="Itinerary title">
+                                <textarea class="form-control" rows="5" id="comment" name="description" placeholder="itinerary description">
+                                </textarea>
+                                <input type="submit" value="insert"/>
+                                <input type="reset" value="cancel"/>
                             </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" onclick="">INSERT ITINERARY</button>
-                            <button type="button" class="btn btn-default" data-dismiss="modal">NO, CLOSE</button>
                         </div>
                     </div>
 
