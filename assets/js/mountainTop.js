@@ -32,18 +32,8 @@ function confirm() {
     pass1 = document.getElementById("pass1").value;
     pass2 = document.getElementById("pass2").value;
 
-    if (pass1 == pass2) {
-        alert("yeah")
-    } else {
+    if (pass1 !== pass2) {
         alert("Passwords dont match");
-
-    }
-
 }
-function parent(val) {
-    var tr=val.parentNode.parentNode;
-    
-    var td=tr.querySelector('td[mail]');
-    console.log(td);
-    
+
 }
