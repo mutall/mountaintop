@@ -38,13 +38,15 @@ if (isset($_FILES['image'])) {
     //upload the picture if no error was detected otherwise print out the //error
 
     if (empty($errors) == true) {
-        $caption = $_POST['caption'];
-        $sql = "Insert into picture (`name`, `caption`) Values ('$file_name','$caption')";
-        $result = $crud->execute($sql);
-        move_uploaded_file($file_tmp, "images/" . $file_name);
-        echo "Success";
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $location = $_POST['location'];
+            $caption = $_POST['caption'];
+            $sql = "Insert into picture (`name`, `caption`, `location`) Values ('$file_name','$caption','$location')";
+            $result = $crud->execute($sql);
+            move_uploaded_file($file_tmp, "images/" . $file_name);
+            echo "Success";
+        }
     } else {
         print_r($errors);
     }
 }
-?>
