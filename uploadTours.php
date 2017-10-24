@@ -2,10 +2,7 @@
 
 require 'include/crud.php';
 
-
 $crud = new crud();
-echo print_r($GLOBALS);
-
 if (isset($_FILES['image'])) {
     //create an empty arry to store the eroors
     $errors = array();
@@ -38,14 +35,22 @@ if (isset($_FILES['image'])) {
 
     //upload the picture if no error was detected otherwise print out the //error
 
-//    if (empty($errors) == true) {
-//        $caption = $_POST['caption'];
-//        $sql = "Insert into picture (`name`, `caption`) Values ('$file_name','$caption')";
-//        $result = $crud->execute($sql);
-//        move_uploaded_file($file_tmp, "images/" . $file_name);
-//        echo "Success";
-//    } 
-    else {
+    if (empty($errors) == true) {
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+            $section = $_POST['section'];
+            $title = $_POST['title'];
+            $description = $_POST['description'];
+            $caption = $_POST['caption'];
+
+            //find out how to insert into linked tables mysql
+            $sql = "Insert into itinerary(`title`, `caption`, `image`, description)"
+                    . " Values ('$title','$caption','$file_name', '$description')";
+            $result = $crud->execute($sql);
+            move_uploaded_file($file_tmp, "images/" . $file_name);
+            echo "Success";
+        }
+    } else {
         print_r($errors);
     }
 }
