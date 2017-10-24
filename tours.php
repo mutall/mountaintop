@@ -7,34 +7,17 @@ include("include/header.php");
 
 <div class="container-fluid">
     <div class="row content">
-        <div class="col-sm-3 sidenav">
-            <h4>SAFARIS</h4>
-            <ul class="nav nav-pills nav-stacked">
-                <li>Kenyan Safaris </li>
-                <li>Tanzania Safaris</li>
-                <li>Ugandan Safaris</li>
-            </ul><br>
-            <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search..">
-                <span class="input-group-btn">
-                    <button class="btn btn-default" type="button">
-                        <span class="glyphicon glyphicon-search"></span>
-                    </button>
-                </span>
-            </div>
-        </div>
         <div class="col-sm-9">
             <div class="places" id="place">
                 <section id="places">
                     <?php
-                    $sql = "select * from itinerary inner join section on section.section=itinerary.section";
+                    $sql = "select * from itinerary";
                     $result = $crud->getData($sql);
                     foreach ($result as $key => $value) {
-                        $concat = str_replace(" ", "", $value['title'])
                         ?>
                         <figure>
                             <img src="images/<?php echo $value['image']; ?>" 
-                                 data-toggle="modal" data-target="#<?php echo $concat; ?>" />
+                                 data-toggle="modal" data-target="#<?php echo $value['itinerary']; ?>" />
                             <figcaption>
                                 <p><?php echo $value['caption']; ?></p>
                             </figcaption>
@@ -113,7 +96,7 @@ include("include/header.php");
 <!--modal boxes-->
 <?php foreach ($result as $key => $value) { ?>
 
-    <div id = "<?php echo str_replace(" ", "", $value['title']); ?>" class = "modal fade" role = "dialog">
+    <div id = "<?php echo $value['itinerary']; ?>" class = "modal fade" role = "dialog">
         <div class = "modal-dialog">
 
             <!--Modal content-->
