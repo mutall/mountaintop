@@ -2752,7 +2752,6 @@ However, delay the fade out process for 2.5 seconds */
     line-height: 20px;
 }
 
-
 /*admin page  */
 
 #myDiv {
@@ -2817,4 +2816,9 @@ input[type=button] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+
+.col-sm-9{
+    width: 100%;
+    height: auto;
 }

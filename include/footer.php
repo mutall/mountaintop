@@ -6,7 +6,7 @@
                 <ul>
                     <li><i fa fa-map-marker></i>
                         <address>P.O Box 195-00502<br>Karen, Nairobi</address></li>
-                    <li><i fa fa-phone></i>+254797583980<br> +254722422434</li>
+                    <li><i fa fa-phone></i>+254716479022<br> +254722422434<br>+254750635435<br>+254729654116</li>
                     <li><i fa fa-envelope-o></i>info@mountaintopsafarisadventures.co.ke
                     </li>
                 </ul>

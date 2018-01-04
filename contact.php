@@ -78,9 +78,10 @@
                                 <address>
                                     <strong>Mountain Top safaris</strong><br>
                                     Karen,Kenya<br>
-                                    <abbr title="Phone">Phone:</abbr> +254797583980<br>
-                                    <abbr title="Phone">Phone:</abbr> +254722422434
-
+                                    <abbr title="Phone">Phone:</abbr>+254716479022<br>
+                                    <abbr title="Phone">Phone:</abbr> +254722422434<br>
+                                    <abbr title="Phone">Phone:</abbr>+254750635435<br>
+                                    <abbr title="Phone">Phone:</abbr>+254729654116
                                 </address>
 
                                 <address>

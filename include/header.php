@@ -13,6 +13,12 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
         <script src="assets/js/mountainTop.js"></script> 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script> 
+        <style>
+            .col-sm-9{
+                width: 100%;
+                height: auto;
+            }
+        </style>
     </head>
 
     <body class="homepage">
