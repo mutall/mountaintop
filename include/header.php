@@ -31,14 +31,20 @@
                         <img src="images/new_logo.jpg">
                     </div>
                     <!-- Nav -->
+                    <div class="social">
+                        <a href="#"><i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter-square fa-4x" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-google-plus-square fa-4x" aria-hidden="true"></i></a>
+                    </div>
                     <nav id="navi">
                         <ul>
                             <li><a href="index.php">HOME</a></li>
-                            <li><a href="booking.php?form=">BOOK US</a></li>
+                            <li><a href="no-sidebar.html">ABOUT US</a></li>
                             <li><a href="tours.php">TOURS</a></li>
                             <li><a href="gallery.php">GALLERY</a></li>
+                            <li><a href="booking.php?form=">BOOK US</a></li>
                             <li><a href="contact.php">CONTACT US</a></li>
-                            <li><a href="no-sidebar.html">ABOUT US</a></li>
+                        
                         </ul>
                     </nav>
                 </header>
