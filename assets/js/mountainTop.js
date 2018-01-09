@@ -3,27 +3,39 @@
 //what i needed to do was reload the content and leave the header and footer be
 //
 window.onload=function(){
-  changeContent("")  
+  changeContent();  
 };
 function changeContent(item){
-    alert("running");
-    if (item==="home") {
-        document.getElementsByClassName('container').innerHtml="<?php require 'index.php'; ?>";
-    }
-    else if (item==="about") {
-        document.getElementsByClassName('container').innerHtml="<?php require 'about.php'; ?>";
-    }
-    else if (item==="tour") {
-        document.getElementsByClassName('container').innerHtml="<?php require 'tours.php'; ?>";
-    }
-    else if (item==="gallery") {
-        document.getElementsByClassName('container').innerHtml="<?php require 'gallery.php'; ?>";
-    }
-    else if (item==="contact") {
-        document.getElementsByClassName('container').innerHtml="<?php require 'contact.php'; ?>";
-    }
-    else {
-        document.getElementsByClassName('container').innerHtml="<?php require 'index.php'; ?>";
+    
+    //create a switch statement for the click events
+    switch (item) {
+        case "home":
+            document.getElementsByClassName('container').innerHtml="<?php require 'home.php'; ?>";
+            break;
+            
+        case "about":
+            document.getElementsByClassName('container').innerHtml="<?php require 'about.php'; ?>";
+            break;
+            
+        case "tour":
+            document.getElementsByClassName('container').innerHtml="<?php require 'tours.php'; ?>";
+            break;
+            
+        case "gallery":
+            document.getElementsByClassName('container').innerHtml="<?php require 'gallery.php'; ?>";
+            break;
+            
+        case "book":
+            document.getElementsByClassName('container').innerHtml="<?php require 'booking.php'; ?>";
+            break;
+            
+        case "contact":
+            document.getElementsByClassName('container').innerHtml="<?php require 'contact.php'; ?>";
+            break;
+            
+        default:
+            document.getElementsByClassName('container').innerHtml="<?php require 'home.php'; ?>";
+            break;
     }
 }
 
