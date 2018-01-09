@@ -1,5 +1,4 @@
 <?php
-include("include/header.php");
 include ("include/booking.php");
 
 //
@@ -41,7 +40,6 @@ if ($_SERVER["REQUEST_METHOD"]=="POST") {
             . "'$comments')";
     $result = $crud->execute($sql);
 }
-include("include/footer.php");
 
 
 

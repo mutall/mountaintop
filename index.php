@@ -8,10 +8,10 @@
         <link rel="icon" href="images/favicon.png" type="image/png" />
         <link rel="stylesheet" href="assets/css/main.css" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" /> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
         <script src="assets/js/mountainTop.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
         <style>
             .col-sm-9{
@@ -24,32 +24,32 @@
     <body class="homepage">
         <div id="page-wrapper">
             <!-- Header -->
-            <div id="header-wrapper">
-                <header id="header" class="container">
-                    <!-- Logo -->
-                    <div id="logo">
-                        <img src="images/new_logo.jpg">
-                    </div>
-                    <!-- Nav -->
-                    <div class="social">
-                        <a href="#"><i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-twitter-square fa-4x" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-google-plus-square fa-4x" aria-hidden="true"></i></a>
-                    </div>
-                    <nav id="navi">
-                        <ul>
-                            <li class="active" onclick="changeContent('home')">HOME</li>
-                            <li onclick="changeContent('about')">ABOUT US</li>
-                            <li onclick="changeContent('tour')">TOURS</li>
-                            <li onclick="changeContent('gallery')">GALLERY</li>
-                            <li onclick="changeContent('book')">BOOK US</li>
-                            <li onclick="changeContent('contact')">CONTACT US</li>
-                        </ul>
-                    </nav>
-                </header>
-            </div>
+
+            <header id="header" class="container">
+                <!-- Logo -->
+                <div id="logo">
+                    <img src="images/new_logo.jpg">
+                </div>
+                <!-- Nav -->
+                <div class="social">
+                    <a href="#"><i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter-square fa-4x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-google-plus-square fa-4x" aria-hidden="true"></i></a>
+                </div>
+                <nav id="navi">
+                    <ul>
+                        <li class="active" onclick="changeContent('home')">HOME</li>
+                        <li onclick="changeContent('about')">ABOUT US</li>
+                        <li onclick="changeContent('tour')">TOURS</li>
+                        <li onclick="changeContent('gallery')">GALLERY</li>
+                        <li onclick="changeContent('book')">BOOK US</li>
+                        <li onclick="changeContent('contact')">CONTACT US</li>
+                    </ul>
+                </nav>
+            </header>
+
             <div class="container">
-                
+
             </div>
 
             <!-- Footer -->

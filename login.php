@@ -3,7 +3,6 @@ require_once 'include/database.php';
 $db = new database();
 $mysqli = $db->connection;
 session_start();
-include("include/header.php");
 ?>
 
 <form action="login.php" method="post">

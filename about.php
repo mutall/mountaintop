@@ -1,7 +1,4 @@
 <!DOCTYPE HTML>
-<?php
-include("include/header.php");
-?>
 <!-- Main -->
 <div id="main-wrapper">
     <div class="container" id="myContainer">
@@ -41,6 +38,3 @@ include("include/header.php");
     </div>
 </div>
 </div>
-<!-- Footer -->
-<?php
-include("include/footer.php");

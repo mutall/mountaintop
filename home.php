@@ -3,8 +3,6 @@
 require_once 'include/crud.php';
 //create a new crud object
 $crud= new crud();
-//include my header file which is the same in all pages
-include("include/header.php");
 
 ?>
 
@@ -70,6 +68,3 @@ include("include/header.php");
     }
     ?>
 </div>
-<!--places modals or pop ups-->
-<?php
-include("include/footer.php");
