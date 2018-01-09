@@ -20,13 +20,10 @@ if (isset($_SESSION['mail'])) {
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <link rel="icon" href="images/favicon.png" type="image/png" />
             <link rel="stylesheet" href="assets/css/main.css" />
-            <link rel="stylesheet" href="assets/css/bootstrap.css" />
-            <!--            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-                        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
             <script src="assets/js/mountainTop.js"></script>
-            <script src="assets/js/jquery.js"></script>
-            <script src="assets/js/bootstrap.js"></script>
             <style>
                 .add_photos{
                     width: 50%;

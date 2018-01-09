@@ -18,7 +18,6 @@ include("include/header.php");
                     population of expatriates, tourists and shoppers, Karen is becoming one of the local hubs for
                     Tourism. Not forgetting it has a history for itself like Karen Blixen museum, Karen Country and
                     golf club and many other historical sites dating back early 20th Century.</p>
-
                 <p>Our processes are driven by world class practices across all service areas which enable us to provide
                     the greatest value at the lowest risk. We pride ourselves as a specialized and focused provider
                     of the best tourist destinations to our customers.</p>

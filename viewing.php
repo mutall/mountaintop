@@ -69,7 +69,6 @@ function edit_users() {
     <div class="table-responsive">
         <table class="table table-hover">
             <tr id="head_row">
-                <th>Thumb</th>
                 <th>name</th>
                 <th>email</th>
                 <th>action</th>
@@ -83,8 +82,7 @@ function edit_users() {
             foreach ($result as $key => $value) {
             ?>
                 <tr class="myTr">
-                    <td><?php echo $value ['thumb']; ?> </td>
-                    <td><?php echo $value ['first_name'] . $value ['last_name']; ?> </td>
+                    <td><?php echo $value ['name']; ?> </td>
                     <td id="mail"><?php echo $value ['email']; ?> </td>
                     <td class="edit"><button type="button" data-toggle="modal" data-target="#deleteUser" onclick="parent(this)">DELETE USER</button></td>
                 </tr>
