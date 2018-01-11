@@ -1,57 +1,3 @@
-//change the content and not href of the page
-//after deep consultaion with muraya the problem was i was reloading the page and 
-//what i needed to do was reload the content and leave the header and footer be
-//
-window.onload=function(){
-  changeContent();  
-};
-function changeContent(item){
-    
-    //create a switch statement for the click events
-    switch (item) {
-        case "home":
-            document.getElementsByClassName('container').innerHtml="<?php require 'home.php'; ?>";
-            break;
-            
-        case "about":
-            document.getElementsByClassName('container').innerHtml="<?php require 'about.php'; ?>";
-            break;
-            
-        case "tour":
-            document.getElementsByClassName('container').innerHtml="<?php require 'tours.php'; ?>";
-            break;
-            
-        case "gallery":
-            document.getElementsByClassName('container').innerHtml="<?php require 'gallery.php'; ?>";
-            break;
-            
-        case "book":
-            document.getElementsByClassName('container').innerHtml="<?php require 'booking.php'; ?>";
-            break;
-            
-        case "contact":
-            document.getElementsByClassName('container').innerHtml="<?php require 'contact.php'; ?>";
-            break;
-            
-        default:
-            document.getElementsByClassName('container').innerHtml="<?php require 'home.php'; ?>";
-            break;
-    }
-}
-
-
-////window.onload=function(){
-//  myList=document.getElementsByTagName('li');
-//   for (var i = 0; i < myList.length; i++) {
-//        myList[i].addEventListener("click", /**
-//         * Set the attribute to active when clicked
-//         */
-//                function name() {
-//                    document.querySelector(".active").removeAttribute('class');
-//                    this.setAttribute('class', 'active');
-//                });
-//    }
-//};
 
 function changeSelector(selector){
     console.log("test");
@@ -91,6 +37,15 @@ function populate(id, url) {
     xhttp.open("GET", url + id);
     xhttp.send();
 
+}
+
+//function to send a javascript variable via ajax without returning anything
+function sendVar(hint){
+    var url='index.php?=';
+    var xhttp=new XMLHttpRequest()
+
+    xhttp.open("GET", url+hint);
+    xhttp.send();
 }
 
 function confirm() {
