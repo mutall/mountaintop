@@ -1,7 +1,7 @@
 <?php
 require_once 'include/crud.php';
 $crud = new crud();
-
+include ('include/header.php');
 ?>
 
 <div class="container-fluid">
@@ -121,4 +121,6 @@ $crud = new crud();
     </div>
 
     <?php
-} ?>
+}
+include ('include/footer.php');
+?>

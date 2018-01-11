@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+include ('include/header.php');
 <!-- Main -->
 <div id="main-wrapper">
     <div class="container" id="myContainer">
@@ -38,3 +38,4 @@
     </div>
 </div>
 </div>
+<?php include ('include/footer.php'); ?>

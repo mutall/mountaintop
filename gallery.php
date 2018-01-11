@@ -4,6 +4,7 @@ $crud = new crud();
 
 $sql = "select * from picture where picture.location='gallery'";
 $result = $crud->getData($sql);
+include ('include/header.php');
 ?>
 <div class="panel-group">
     <div class="images">
