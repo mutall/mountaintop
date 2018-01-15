@@ -1,4 +1,4 @@
-include ('include/header.php');
+<?php include ('include/header.php'); ?>
 <!-- Main -->
 <div id="main-wrapper">
     <div class="container" id="myContainer">
