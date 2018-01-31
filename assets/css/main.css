@@ -1,6 +1,5 @@
 @import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Oleo+Script:400|Open+Sans:300,300italic,600,600italic,800");
-
 /* Reset */
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, div, caption, footer, header, hgroup, menu, navi, output, ruby, section, summary, time, mark, audio, video {
@@ -2128,17 +2127,39 @@ ol.default li {
 }
 
 /*image gallery*/
+.btn{
+  font-family: Lato;
+font-size: 1rem;
+font-weight: normal;
+text-decoration: none;
+cursor: pointer;
+display: inline-block;
+line-height: normal;
+padding: .5rem 1rem;
+margin: 0;
+height: auto;
+border: 1px solid;
+vertical-align: middle;
+-webkit-appearance: none;
+color: #555;
+background-color: rgba(0, 0, 0, 0);
 
-.images {
-  display: block;
 }
-
-.images figure {
-  display: inline-block;
-  margin: 10px;
+.btn:hover{
+  background-color: #FFADAD;
 }
-
-a.grouped_elements img {
+.images{
+  float: left;
+  margin: 0 6px 10px 4px;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+}
+.images img{
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10%;
   border: none;
   box-shadow: 0 1px 7px rgba(0, 0, 0, 0.6);
   -o-transform: scale(1, 1);
@@ -2152,8 +2173,7 @@ a.grouped_elements img {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-
-a.grouped_elements:hover img {
+.images:hover img {
   position: relative;
   z-index: 999;
   -o-transform: scale(1.03, 1.03);
@@ -2162,7 +2182,9 @@ a.grouped_elements:hover img {
   -webkit-transform: scale(1.03, 1.03);
   transform: scale(1.03, 1.03);
 }
-
+.scale-anm {
+  transform: scale(1);
+}
 /*footer section*/
 
 footer div {
