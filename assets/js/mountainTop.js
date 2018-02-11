@@ -1,14 +1,3 @@
-
-function changeSelector(selector){
-    console.log("test");
-    var x=document.querySelector("li[class='active'");
-    
-    console.log(x);
-    x.removeAttribute('class');
-    
-    selector.setAttribute('class', 'active');
-}
-
 //toast snackbar for booking page
 function toast() {
     // Get the snackbar DIV
