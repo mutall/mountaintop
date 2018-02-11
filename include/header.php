@@ -7,9 +7,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="images/favicon.png" type="image/png" />
         <link rel="stylesheet" href="assets/css/main.css" />
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.js"></script>
         <script src="assets/js/mountainTop.js"></script>
         <style>
             .col-sm-9{
@@ -32,9 +34,9 @@
                         <img src="new_logo.jpg">
                     </div>
                     <!-- Nav -->
-                    <nav id="navi">
+                    <nav id="navi" class="navbar">
                         <ul>
-                            <li><a href="index.php">HOME</a></li>
+                            <li class="active"><a href="index.php">HOME</a></li>
                             <li><a href="about.php">ABOUT US</a></li>
                             <li><a href="tours.php">TOURS</a></li>
                             <li><a href="gallery.php">GALLERY</a></li>
