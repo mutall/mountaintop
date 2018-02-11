@@ -1,8 +1,6 @@
 <?php include ('include/header.php'); ?>
 <!-- Main -->
-<div id="main-wrapper">
-    <div class="container" id="myContainer">
-        <div id="content">
+    <div class="myContainer">
             <!-- Content -->
             <article class="about animated bounceInRight">
 
@@ -15,27 +13,24 @@
                     population of expatriates, tourists and shoppers, Karen is becoming one of the local hubs for
                     Tourism. Not forgetting it has a history for itself like Karen Blixen museum, Karen Country and
                     golf club and many other historical sites dating back early 20th Century.</p>
+                    <p>Mountain Top Safaris is a well established Tour Company that specializes in offering programs in Kenya, Tanzania and Zanzibar. Our main focus is on quality services leading to a beautiful traveling experience with a better understanding of natural and Cultural history. Safety and comfort are our priority by providing services that are equal to none.
+
+ </p>
                 <p>Our processes are driven by world class practices across all service areas which enable us to provide
                     the greatest value at the lowest risk. We pride ourselves as a specialized and focused provider
                     of the best tourist destinations to our customers.</p>
             </article>
-            <div>
                 <article class="about animated bounceInLeft">
-                    <h2>MISSION STATEMENT</h2>
+                    <h2>OUR SERVICES INCLUDE</h2>
                     <ul style="list-style-type: circle; list-style-position: inside">
-                        <li>To be a model tourist provider within the region.</li>
-                        <li>Constantly offering quality services to our clients.</li>
-                        <li>Encourage team work and positive contribution.</li>
-                        <li>Practice fair competition.</li>
-                        <li>The company practices the best solutions for customer satisfaction.</li>
-                        <li>Conduct business with integrity and honesty.</li>
+                        <li>Domestic and International Tours</li>
+                        <li>Hotel bookings</li>
+                        <li>Airport Transfers</li>
+                        <li>Daily Excursions</li>
+                        <li>Honeymoon Packages</li>
+                        <li>Car Hire</li>
+                        <li>Corporate & institutions Retreat</li>
                     </ul>
                 </article>
-            </div>
         </div>
-
-
-    </div>
-</div>
-</div>
 <?php include ('include/footer.php'); ?>
