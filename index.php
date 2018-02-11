@@ -12,7 +12,7 @@ include ('include/header.php');
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
         <div class="item active">
-            <img src="images/aherdofelephants-31.jpg"/>
+            <img src="images/slider/slider2.jpg"/>
         </div>
         <?php
         $sql = "SELECT "
@@ -26,7 +26,7 @@ include ('include/header.php');
         foreach ($result_slider as $key => $value) {
             ?>
         <div class="item">
-            <img src="images/<?php echo $value['name']; ?>"/>
+            <img src="images/slider/<?php echo $value['name']; ?>"/>
         </div>
 
         <?php
@@ -52,17 +52,17 @@ include ('include/header.php');
             . "FROM "
             . "picture "
             . "WHERE "
-            . "location='places'";
+            . "filter='places'";
 
     $result_places = $crud->getData($sql1);
     foreach ($result_places as $key => $value) {
         ?>
-        <figure>
+        <figure class="figure">
             <a data-fancybox="gallery" href="#<?php echo $value['caption']; ?>">
                 <img src="images/<?php echo $value['name']; ?>">
             </a>
-            <figcaption>
-                <p><?php echo $value['caption']; ?></p>
+            <figcaption class="caption">
+                <p class="some_caption"><?php echo $value['caption']; ?></p>
             </figcaption>
         </figure>
         <?php
