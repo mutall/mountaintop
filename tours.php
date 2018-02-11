@@ -7,23 +7,20 @@ include ('include/header.php');
 <div class="container-fluid">
     <div class="row content">
         <div class="col-sm-9">
-            <div class="places" id="place">
-                <section id="places">
+            <div class="places">
                     <?php
                     $sql = "select * from itinerary";
                     $result = $crud->getData($sql);
                     foreach ($result as $key => $value) {
                         ?>
-                        <figure>
-                            <img src="images/<?php echo $value['image']; ?>" 
-                                 data-toggle="modal" data-target="#<?php echo $value['itinerary']; ?>" />
-                            <figcaption>
-                                <p><?php echo $value['caption']; ?></p>
+                        <figure class="figure" data-toggle="modal" data-target="#<?php echo $value['itinerary']; ?>">
+                            <img src="images/places/<?php echo $value['image']; ?>"/>
+                            <figcaption class="caption">
+                                <p class="some_caption"><?php echo $value['caption']; ?></p>
                             </figcaption>
                         </figure>
                     <?php }
                     ?>
-                </section>
             </div>
 
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
